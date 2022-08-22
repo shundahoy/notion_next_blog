@@ -12,7 +12,7 @@ const Navbar = () => {
           aria-label="breadcrumb"
         >
           <Link href="/">
-            <a className="text-gray-500 hover:text-gray-600">
+            <a className="text-gray-50 hover:text-gray-600 color-blue text-lg">
               {siteConfig.title}
             </a>
           </Link>

@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div className="relative overflow-hidden">
-      <div className="flex flex-col items-center max-w-2xl w-full mx-auto">
+      <div className="flex flex-col items-center max-w-5xl w-full mx-auto">
         {/*  */}
         <Navbar />
         {/*  */}

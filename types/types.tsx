@@ -23,7 +23,7 @@ export type ArticleProps = {
 };
 export type ArticleMetaProps = CardProps;
 
-export type IndexProps = { pages: PageType[] };
+export type IndexProps = { pages: PageType[]; tags?: string[] };
 
 export type TagProps = IndexProps & { tag: string };
 

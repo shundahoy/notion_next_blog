@@ -4,6 +4,7 @@
 
 h1 {
   @apply font-semibold leading-tight text-4xl mt-0 mb-2;
+  color: rgb(3 201 215);
 }
 h2 {
   @apply font-semibold leading-tight text-3xl mt-0 mb-2;
@@ -12,8 +13,20 @@ h3 {
   @apply font-semibold leading-tight text-2xl mt-0 mb-2;
 }
 p {
-  @apply font-light leading-relaxed text-base text-gray-800 mt-0 mb-4;
+  @apply leading-relaxed text-base text-gray-200 mt-0 mb-4;
 }
 main {
   @apply min-h-screen flex flex-col justify-center items-center;
+}
+
+body {
+  background-color: rgb(32 35 42);
+  @apply text-gray-100;
+}
+.card-bg {
+  background-color: rgb(51 55 62);
+}
+
+.color-blue {
+  color: rgb(3 201 215);
 }

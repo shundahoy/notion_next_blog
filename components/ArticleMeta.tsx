@@ -13,14 +13,14 @@ const ArticleMeta: FC<ArticleMetaProps> = ({ page }) => {
         src={getCover(page.cover)}
         alt=""
         objectFit="cover"
-        width={640}
-        height={360}
+        width={1000}
+        height={400}
         quality={50}
       />
 
       {/* page name */}
       <h1 className="my-8">{getText(page.properties.name.title)}</h1>
-      <div className="bg-gray-100 px-6 py-4 rounded text-sm text-gray-500">
+      <div className="bg-gray-700 px-6 py-4 rounded text-sm text-gray-200">
         <div className="grid grid-cols-3 gap-4">
           {/* published */}
           <div className="col-span-1">Published</div>
@@ -41,7 +41,7 @@ const ArticleMeta: FC<ArticleMetaProps> = ({ page }) => {
             {getMultiSelect(page.properties.tags.multi_select).map(
               (tag: string, index: number) => (
                 <Link key={index} href={`/tags/${tag}`}>
-                  <a className="text-gray-700 no-underline border-b border-solid border-gray-700 opacity-70 mr-3">
+                  <a className="text-gray-200 no-underline border-b border-solid border-gray-700  mr-3">
                     <span>{`#${tag}`}</span>
                   </a>
                 </Link>
